@@ -1,0 +1,31 @@
+# PROGRAM ATM 
+pin = '123456'
+saldo = 0
+print('Selamat Datang di program ATM, BANK BNB')
+for i in range(3):
+    print()
+    inPin = input("Silahkan masukkan 6 digit pin anda : ")
+    if inPin == pin :
+        print()
+        print("PIN yang Anda masukkan benar")
+        print()
+        break
+    else :
+        print("PIN salah")
+        if i == 2 :
+            print("============================================")
+            print("Akun anda kami tangguhkan selama 24 jam")
+            print("============================================")
+            quit()
+pilihan = 'y'
+while (pilihan == 'y'):
+    print('01. Silahkan pilih 1 untuk informasi saldo')
+    print('02. Silahkan pilih 2 untuk penarkan uang tunai')
+    print('03. Silahkan pilih 3 untuk setor tabungan')
+    print('04. Silahkan pilih 4 untuk keluar')
+    print()
+    menu = input('Silahkan pilih menu yang anda inginkan : ')
+    print("===================================================")
+    if menu == '1':
+        print(f"Sisa saldo anda : {saldo}")
+    elif menu == '2':
